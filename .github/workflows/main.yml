@@ -29,9 +29,9 @@ jobs:
     - name: Patch to include files
       run: |
         cd firefox
-	cp ../codecs.sh /.
+        cp ../codecs.sh .
         chmod +x codecs.sh
-	./codecs.sh
+        ./codecs.sh
         cp ../AppRun firefox/.
         chmod +x firefox/AppRun
         cp ../firefox.desktop firefox/.
