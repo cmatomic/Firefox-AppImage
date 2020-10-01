@@ -10,6 +10,5 @@ do
   dpkg-deb -e $f.deb $f/DEBIAN
 done
 
-find ./ -name 'libs*-*.so*'  | xargs cp -t .
-find ./ -name 'libav*-*.so*'  | xargs cp -t .
-
+find  -name 'libs*-*.so*'  | xargs cp -t  firefox/.
+find  -name 'libav*-*.so*' | xargs cp -t  firefox/.
